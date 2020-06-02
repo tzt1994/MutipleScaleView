@@ -303,6 +303,7 @@ class MutipleScaleView: View {
         }
         val irregulars = typedArray.getString(R.styleable.MutipleScaleView_msv_irregulars)
         irregulars?.let {
+            mIrregularList.clear()
             val scales = it.split(",")
             if (scales.isNotEmpty()) {
                 for (scale in scales) {

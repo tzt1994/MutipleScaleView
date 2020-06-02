@@ -27,6 +27,14 @@
             app:msv_scale_type="irregular"/>
 
         <com.tzt.mutiplescale.MutipleScaleView
+            android:id="@+id/scale9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:msv_scale_type="irregular"
+            app:msv_irregulars="10元,14元,15元,20元,30元,70元,72元,77元"/>
+
+        <com.tzt.mutiplescale.MutipleScaleView
             android:id="@+id/scale2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
