@@ -2,7 +2,29 @@
 Android多功能刻度尺(Kotlin)
 
 ## 演示效果
+![刻度尺1](https://github.com/tzt1994/imageLib/blob/master/NotificationTest/mutiplescale1.png)
+![刻度尺2](https://github.com/tzt1994/imageLib/blob/master/NotificationTest/mutiplescale2.png)
 
+## 添加依赖
+- **1.项目跟目录下的build.gradle中**
+```
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+- **2.app路径下的build.gradle中**
+```
+dependencies {
+    ...
+    ...
+    implementation 'com.github.tzt1994:MutipleScaleView:v1.0.1'
+}
+```
 
 ## 自定义属性
 属性名|属性含义|值类型|默认值
@@ -25,7 +47,7 @@ Android多功能刻度尺(Kotlin)
 `msv_scale_text_color`|刻度值未选中颜色|ColorInt或颜色资源id|#333333
 `msv_select_color`|刻度值选中颜色|ColorInt或颜色资源id|#ff8f00
 `msv_scale_text_size`|刻度值文字大小|sp或尺寸资源id|14sp
-`msv_min_scrollable_nums`|最小可选刻度数|Int|1
+`msv_min_scrollable_nums`|最小可选刻度数(规则刻度尺下有效)|Int|1
 
 ## 在代码中动态设置的属性
 - `mOnlyTenScaleLineAble` boolean 是否每10个刻度画一个刻度线 默认`false`
@@ -47,8 +69,11 @@ Android多功能刻度尺(Kotlin)
 - `mRecentlyNums` 见自定义属性`msv_min_scrollable_nums`
 
 ## 版本日志
-v1.0.0: 
 
+v1.0.1:
+- 修复xml设置不规则数据集，刻度值显示异常问题
+
+v1.0.0:
 - 支持点击选中，支持滑动选中，支持惯性滑动，支持边界回弹
 - 支持设置刻度线长宽，刻度线颜色，刻度间距，
 - 支持设置刻度值颜色及大小
