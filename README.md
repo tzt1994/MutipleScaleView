@@ -6,7 +6,7 @@ Android多功能刻度尺(Kotlin)
 ![刻度尺2](https://github.com/tzt1994/imageLib/blob/master/NotificationTest/mutiplescale2.png)
 
 ## 添加依赖
-- **1.项目跟目录下的build.gradle中**
+- **1.项目根目录下的build.gradle中**
 ```
 allprojects {
     repositories {
