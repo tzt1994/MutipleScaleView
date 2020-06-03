@@ -80,7 +80,7 @@ v1.0.0:
 - 支持设置指针图片
 
 ## License
-    Copyright 2018-2020 KunMinX
+    Copyright 2018-2020 
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
